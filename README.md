@@ -8,7 +8,8 @@ Repository kelompok A5 - KKK (Kami Kelompok Kelima) - Proyek 4
 4. Salsabila Putri Fathiyah - 201511028
 5. Yosua Lumbanraja - 201511032
 6. #+++++++++++++++++++++++++++++++++++
-7. -hasya
-8. -habban
-9. -salsabila PF
-10. -Yosua
+7. -habban
+8. -hasya
+9. -Ragil
+10. -salsabila PF
+11. -Yosua
