@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pengujis",
+  "info": {
+    "singularName": "penguji",
+    "pluralName": "pengujis",
+    "displayName": "Penguji"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nama": {
+      "type": "string"
+    },
+    "NIP": {
+      "type": "string"
+    },
+    "jabatan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jabatan.jabatan"
+    },
+    "grade": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grade.grade"
+    },
+    "jenjang": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jenjang.jenjang"
+    }
+  }
+}

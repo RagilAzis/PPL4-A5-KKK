@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pegawais",
+  "info": {
+    "singularName": "pegawai",
+    "pluralName": "pegawais",
+    "displayName": "Pegawai",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nip": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "nama_pegawai": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grade.grade"
+    },
+    "religion": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "tempat_lahir": {
+      "type": "string"
+    },
+    "tanggal_lahir": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "string",
+      "maxLength": 1
+    },
+    "jenjang": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jenjang.jenjang"
+    },
+    "unit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unit.unit"
+    },
+    "direktorat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::direktorat.direktorat"
+    },
+    "divisi": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::divisi.divisi"
+    },
+    "bidang": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bidang.bidang"
+    },
+    "sub_bidang": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sub-bidang.sub-bidang"
+    },
+    "jabatan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jabatan.jabatan"
+    },
+    "no_hp": {
+      "type": "string"
+    },
+    "pendidikan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pendidikan.pendidikan"
+    }
+  }
+}

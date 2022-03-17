@@ -1,0 +1,4 @@
+[ Hasil Eksplorasi ]
+
+- sudah mulai paham bagaimana membuat collection type, set roles and permission, CRUD menggunakan thunder client, terbayang bagaimana menambahkan users, menambahkan assets
+- ketika membuat web masih belum berhasil menghubungkan dari FE ke API dan terkadang web tidak dapat dimuat/berjalan sebagaimana mestinya. (hasya)

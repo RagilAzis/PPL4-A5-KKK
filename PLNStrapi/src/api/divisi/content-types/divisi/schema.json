@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "divisis",
+  "info": {
+    "singularName": "divisi",
+    "pluralName": "divisis",
+    "displayName": "Divisi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_divisi": {
+      "type": "string"
+    }
+  }
+}
