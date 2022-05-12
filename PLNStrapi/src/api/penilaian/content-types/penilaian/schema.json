@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "penilaians",
+  "info": {
+    "singularName": "penilaian",
+    "pluralName": "penilaians",
+    "displayName": "penilaian"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enthusiasthic": {
+      "type": "integer"
+    },
+    "creative": {
+      "type": "integer"
+    },
+    "building": {
+      "type": "integer"
+    },
+    "strategic": {
+      "type": "integer"
+    },
+    "customer": {
+      "type": "integer"
+    },
+    "driving": {
+      "type": "integer"
+    },
+    "visionary": {
+      "type": "integer"
+    },
+    "empowering": {
+      "type": "integer"
+    },
+    "keandalan": {
+      "type": "integer"
+    },
+    "kecepatan": {
+      "type": "integer"
+    },
+    "manajemen": {
+      "type": "integer"
+    },
+    "kontribusi_kpi": {
+      "type": "integer"
+    },
+    "internal": {
+      "type": "integer"
+    },
+    "eksternal": {
+      "type": "integer"
+    },
+    "akumulasi_nilai": {
+      "type": "decimal"
+    },
+    "fit_proper": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fit-proper.fit-proper",
+      "inversedBy": "penilaians"
+    },
+    "pengujis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::penguji.penguji",
+      "mappedBy": "penilaian"
+    }
+  }
+}
