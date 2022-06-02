@@ -40,7 +40,7 @@ const DataPenguji = () => {
                 <Breadcrumb.Item href="DataPeserta">Data Penguji</Breadcrumb.Item>
             </Breadcrumb>
             <div className="add">
-                <Button variant="primary btn-sm" href="../fit-proper">Tambah Data Penguji</Button>
+                <Button variant="primary btn-sm" href="#">Tambah Data Penguji</Button>
             </div>
 
             <div className="utils">
