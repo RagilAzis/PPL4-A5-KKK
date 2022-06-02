@@ -68,7 +68,7 @@ const FitProper = () => {
 
             <Form.Group className="mb-3" controlId="grade">
                 <Form.Label>Grade</Form.Label>
-                <Form.Control type="grade" />
+                <Form.Control type="grade" value={dataPegawai.grade} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="date">
