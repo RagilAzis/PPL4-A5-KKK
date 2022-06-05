@@ -1,22 +1,28 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser, FaAngleDown } from "react-icons/fa";
+import { FaBars, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
 import { BiSearch } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
-import { AiTwotoneFileExclamation } from "react-icons/ai";
+import AddToQueueIcon from '@mui/icons-material/AddToQueue';
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
+import HomeIcon from '@mui/icons-material/Home';
+import FolderCopyIcon from '@mui/icons-material/FolderCopy';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
+import PrintIcon from '@mui/icons-material/Print';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 const routes = [
   {
     path: "/",
     name: "Dashboard",
-    icon: <FaHome />,
+    icon: <HomeIcon />,
   },
   {
     path: "/master",
     name: "Master",
-    icon: <AiTwotoneFileExclamation />,
+    icon: <FolderCopyIcon />,
     subRoutes: [
       {
         path: "/master/DataPeserta",
@@ -26,14 +32,14 @@ const routes = [
       {
         path: "/master/DataPenguji",
         name: "Data Penguji",
-        icon: <FaLock />,
+        icon: <FaUser />,
       },
     ],
   },
   {
     path: "/fit-proper",
     name: "Fit Proper",
-    icon: <AiTwotoneFileExclamation />,
+    icon: <SupervisorAccountIcon />,
     subRoutes: [
       {
         path: "/fit-proper/RegFit",
@@ -43,12 +49,12 @@ const routes = [
       {
         path: "/fit-proper/RegInterview",
         name: "Pendaftaran Wawancara",
-        icon: <FaLock />,
+        icon: <FaUser />,
       },
       {
         path: "/fit-proper/GradeFit",
         name: "Penilaian Fit & Proper",
-        icon: <FaUser />,
+        icon: <FaLock />,
       },
       {
         path: "/fit-proper/GradeInteview",
@@ -60,33 +66,34 @@ const routes = [
   {
     path: "/report",
     name: "Report",
-    icon: <BiCog />,
+    icon: <AnalyticsIcon />,
     exact: true,
     subRoutes: [
       {
         path: "/report/RepGradeFit",
         name: "Rekap Nilai Fit & Proper",
-        icon: <FaUser />,
+        icon: <AddToQueueIcon />,
       },
       {
         path: "/report/RepManualFit",
         name: "Rekap Manual Nilai Fit & Proper",
-        icon: <FaLock />,
-      },
-      {
-        path: "/report/PrintGradeFit",
-        name: "Cetak Nilai Fit & Proper",
-        icon: <FaMoneyBill />,
+        icon: <AddToQueueIcon />,
       },
       {
         path: "/report/RepGradeInterview",
         name: "Rekap Nilai Wawancara",
-        icon: <FaLock />,
+        icon: <AddToQueueIcon />,
       },
+      {
+        path: "/report/PrintGradeFit",
+        name: "Cetak Nilai Fit & Proper",
+        icon: <PrintIcon />,
+      },
+      
       {
         path: "/report/PrintGradeInterview",
         name: "Cetak Nilai Wawancara",
-        icon: <FaMoneyBill />,
+        icon: <PrintIcon />,
       },
     ],
   },
@@ -155,7 +162,7 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                 >
-                  DoSomeCoding
+                  PLN SUCCESSOR
                 </motion.h1>
               )}
             </AnimatePresence>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Button from "react-bootstrap/Button";
 
 const Dashboard = () => {
     const [dataPeserta, setDataPeserta] = useState([]);
@@ -24,6 +26,12 @@ const Dashboard = () => {
 
     const rows = () => { };
     return (
+      <div>
+
+            <Breadcrumb>
+                <Breadcrumb.Item href="/">Dashboard</Breadcrumb.Item>
+                <Breadcrumb.Item href="DataPeserta">Jadwal</Breadcrumb.Item>
+            </Breadcrumb>
         <table className="table table-striped table-hover">
             <thead>
                 <tr>
@@ -78,6 +86,7 @@ const Dashboard = () => {
                 })}
             </tbody>
         </table>
+        </div>
     );
 };
 

@@ -6,6 +6,7 @@ import { BiCog } from "react-icons/bi";
 import { AiTwotoneFileExclamation } from "react-icons/ai";
 import { useState , useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const menuAnimation = {
   hidden: {

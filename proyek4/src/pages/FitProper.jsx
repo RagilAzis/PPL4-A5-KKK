@@ -3,6 +3,7 @@ import axios from "axios";
 import Form from 'react-bootstrap/Form'
 import Button from "react-bootstrap/Button";
 
+
 const FitProper = () => {
     const [tableData, setData] = useState([]);
     const [nip, setNip] = useState('');
@@ -68,7 +69,7 @@ const FitProper = () => {
 
             <Form.Group className="mb-3" controlId="grade">
                 <Form.Label>Grade</Form.Label>
-                <Form.Control type="grade" value={dataPegawai.grade} />
+                <Form.Control type="grade" />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="date">

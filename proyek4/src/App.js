@@ -5,7 +5,6 @@ import {BrowserRouter as Router , Routes , Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Master from './pages/Master'
 import DataPenguji from './pages/DataPenguji';
-import InputDataPenguji from "./pages/InputDataPenguji";
 import DataPeserta from './pages/DataPeserta';
 import FitProper from './pages/FitProper';
 import RegFit from './pages/RegFit';
@@ -18,6 +17,8 @@ import RepManualFit from './pages/RepManualFit';
 import PrintGradeFit from './pages/PrintGradeFit';
 import PrintGradeInterview from './pages/PrintGradeInterview';
 import RepGradeInterview from './pages/RepGradeInterview';
+import AddPeserta from './pages/AddPeserta';
+import InputDataPenguji from './pages/InputDataPenguji';
 
 function App() {
   return (
@@ -30,10 +31,9 @@ function App() {
           <Route path="/master" element={<Master />} />
           <Route path="/master/datapenguji" element={<DataPenguji />} />
           <Route path="/master/datapeserta" element={<DataPeserta />} />
-          <Route
-              path="/master/inputdatapenguji"
-              element={<InputDataPenguji />}
-            />
+          
+          <Route path="/master/addpeserta" element={<AddPeserta />} />
+          <Route path="/master/inputdatapenguji" element={<InputDataPenguji />}/>
 
           <Route path="/fit-proper" element={<FitProper />} />
           <Route path="/fit-proper/regfit" element={<RegFit />} />
