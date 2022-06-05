@@ -37,10 +37,10 @@ const DataPenguji = () => {
         <div className="container">
             <Breadcrumb>
                 <Breadcrumb.Item href="/">Dashboard</Breadcrumb.Item>
-                <Breadcrumb.Item href="DataPeserta">Data Penguji</Breadcrumb.Item>
+                <Breadcrumb.Item href="DataPenguji">Data Penguji</Breadcrumb.Item>
             </Breadcrumb>
             <div className="add">
-                <Button variant="primary btn-sm" href="#">Tambah Data Penguji</Button>
+                <Button variant="primary btn-sm" href="InputDataPenguji">Tambah Data Penguji</Button>
             </div>
 
             <div className="utils">
